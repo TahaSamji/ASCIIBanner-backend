@@ -2,9 +2,15 @@ const express = require('express');
 const app = express();
 var figlet = require("figlet");
 const cors = require("cors");
-const e = require('express');
 const port = 8000
-app.use(cors());
+
+const corsOptions = {
+  origin: "http://localhost:3000", // Allow requests from this origin
+  methods: ["GET", "POST", "PUT", "DELETE"], // Allow these methods
+  allowedHeaders: ["Content-Type"]
+}
+
+app.use(cors(corsOptions));
 app.use(express.json());
 
 app.post('/convertText', (req, res) => {

@@ -5,8 +5,8 @@ const cors = require("cors");
 const port = 8000
 
 const corsOptions = {
-  origin: "http://localhost:3000", // Allow requests from this origin
-  methods: ["GET", "POST", "PUT", "DELETE"], // Allow these methods
+  origin: "http://localhost:3000"
+  methods: ["GET", "POST", "PUT", "DELETE"],
   allowedHeaders: ["Content-Type"]
 }
 

@@ -5,8 +5,8 @@ const cors = require("cors");
 const port = 8000
 
 const corsOptions = {
-  // origin: "https://ascii-banner.vercel.app",
-  origin: "http://localhost:3000",
+  origin: "https://ascii-banner.vercel.app",
+  // origin: "http://localhost:3000",
   
   methods: ["GET", "POST", "PUT", "DELETE"],
   allowedHeaders: ["Content-Type"]

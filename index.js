@@ -12,7 +12,7 @@ const corsOptions = {
   allowedHeaders: ["Content-Type"]
 }
 let items = [
-  "Alpha", "1Row", "3x5", "AMC 3 Liv1", "AMC Tubes", "Wow", "Trek", "Ticks", 
+  "1Row", "3x5", "AMC 3 Liv1", "AMC Tubes", "Wow", "Trek", "Ticks", 
   "Ticks Slant", "Test1", "Tengwar", "Stellar", "Star Strips", "Small Tengwar", 
   "Small Poison", "Slide", "S Blood", "Runyc", "Runic", "Rotated", "Rot13", 
   "Reverse", "Relief", "Relief2", "Poison", "Peaks", "Peaks Slant", 
@@ -42,7 +42,7 @@ app.post('/convertText', (req, res) => {
         {
           font: font,
           horizontalLayout:horizontallayout,
-          verticalLayout: verticallayout,
+          verticalLayout:verticallayout,
           width: width,
           whitespaceBreak
           
